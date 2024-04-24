@@ -1,0 +1,56 @@
+    /* Form Container Styles */
+    .form-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h1 {
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Form Styles */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .scabinp {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 95%;
+    }
+    .scabinptype{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 99.5%;
+    }
+
+    /* Submit Button Styles */
+    .submit-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Error Message Styles */
+    .error {
+        color: red;
+        font-size: 0.9rem;
+    }

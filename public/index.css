@@ -1,0 +1,37 @@
+.loader {
+    &__container {
+      --dot-size: 15px;
+       --bs-white-rgb: 255, 255, 255;
+      position: absolute;
+      inset: 0;
+      background-color: rgb(var(--bs-white-rgb), .5);
+      backdrop-filter: blur(.25rem);
+      z-index: 10;
+      display: flex;
+      place-items: center;
+      place-content: center;
+      gap: calc(var(--dot-size) / 4);
+    }
+    &__dot {
+      width: var(--dot-size);
+      height: var(--dot-size);
+      aspect-ratio: 1 / 1;
+      border-radius: calc(var(--dot-size) / 2);
+      background-color: var(--bs-primary);
+      animation: slide 1.5s infinite;
+
+      @for $i from 1 to 6 {
+        $colors: (#01539D, #3D5F83, #786B6A, #B47750, #EF8336);
+        &:nth-child(#{$i}) { 
+          animation-delay: 0.1s * $i; 
+          background: nth($colors, $i);
+        }
+      }
+
+      @keyframes slide {
+        0% { scale: 1 }
+        50% { scale: 2; opacity: .3 }
+        100% { scale: 1 }
+      }
+    }
+  }

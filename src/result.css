@@ -1,0 +1,33 @@
+#result{
+    min-height: 50vh;
+    min-width: 20vw;
+    background-color: rgb(247, 244, 213);
+    position: fixed;
+    right: 25px;
+    bottom:10px;
+    z-index: 1;
+    border-radius:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+.svgimage{
+    position: absolute;
+    padding-left: 38%;
+    padding-top: 3%;
+}
+
+.h1class{
+    padding-top: 15px;
+}
+
+.svgimage:hover{
+    cursor: pointer;
+}
+
+button{
+    margin-bottom: 10px;
+}
